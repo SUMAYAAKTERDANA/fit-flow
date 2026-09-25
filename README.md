@@ -1,7 +1,7 @@
 
 
 ## Project Name
-**FitLog** — Train with intent. Log every set.
+**Fit-flow** 
 
 ## Short Description
 FitLog is a dark-themed gym companion app. You can browse a library of workouts (like Barbell Bench Press, Pull Up, Back Squat), add any lift to today's plan, save others for later, and track your daily progress. The whole app is built with Next.js and matches the Figma design exactly.
