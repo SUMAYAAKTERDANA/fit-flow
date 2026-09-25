@@ -41,6 +41,7 @@ import "./globals.css";
 import Navbar from "./component/shared/Navbar";
 import { Toaster } from "react-hot-toast";
 import { PlanProvider } from "./PlanContext";
+import Footer from "./component/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,6 +61,7 @@ export default function RootLayout({
         <PlanProvider>
           <Navbar />
           <main>{children}</main>
+           <Footer />
           <Toaster
             position="bottom-right"
             toastOptions={{
