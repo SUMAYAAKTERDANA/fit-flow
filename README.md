@@ -1,36 +1,37 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## Project Name
+**FitLog** — Train with intent. Log every set.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Short Description
+FitLog is a dark-themed gym companion app. You can browse a library of workouts (like Barbell Bench Press, Pull Up, Back Squat), add any lift to today's plan, save others for later, and track your daily progress. The whole app is built with Next.js and matches the Figma design exactly.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
+- **Next.js 15** — React framework (using App Router)
+- **TypeScript** — A type-safe version of JavaScript
+- **Tailwind CSS** — For styling the UI
+- **React Context API** — For managing global app state
+- **localStorage** — To save data in the browser (so it survives page reloads)
+- **react-hot-toast** — For showing clean toast notifications
+- **REST API** — For fetching workout data (api.abcz.workers.dev/api/fitlog)
+- **Next.js Image** — For optimized image loading
+- **Google Fonts (Inter)** — For clean typography
+- **Figma** — For the UI design reference
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 5 Key Features
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+**1. Workout Library with Live Sorting**
+The library page shows twelve compound lifts covering every major muscle group. Each card displays muscle tags, equipment, duration, calories, and rating. When you pick Duration, Calories, or Rating from the Sort By dropdown, the list re-orders instantly — no page reload needed.
 
-## Learn More
+**2. Detailed Workout Page**
+Every lift has its own detail page (`/library/[id]`). It includes a large hero image, a short description, muscle tags, a spec table (Equipment, Difficulty, Sets, Reps, Duration, Calories, Rating), step-by-step instructions, and two call-to-action buttons: "Add to today's plan" and "Save for later".
 
-To learn more about Next.js, take a look at the following resources:
+**3. My Plan and Saved — Data Stays After Reload**
+When you click "Add to today's plan" or "Save for later" on any workout, it gets stored in React Context and saved to localStorage. This means your selected lifts stay even after you refresh the page. The Plan and Saved badge counters in the navbar update live, and the daily plan is capped at a maximum of 5 lifts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**4. My Plan Dashboard (`/my-plan`)**
+A separate dashboard page with two tabs: "Today's Plan" and "Saved". At the top, three metric cards (Exercises, Minutes, Calories) update live. Below, each planned workout shows its thumbnail, name, stats, and buttons for "View Details" and "Remove". If the list is empty, a friendly "Nothing here yet" message appears with a CTA to browse the library.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**5. Dark, Figma-Accurate, Fully Responsive UI**
+Every screen — Navbar, Banner, Library, Details, My Plan, and Footer — is built pixel-for-pixel to match the Figma design. The app uses a dark theme with lime-green accents (hex: CCFF00). The navbar is sticky, and the active link is highlighted. It works smoothly on mobile, tablet, and desktop.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
