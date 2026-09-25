@@ -37,7 +37,7 @@ const Banner = () => {
         
         <div className="w-full md:w-1/2 flex justify-center md:justify-end relative">
          
-          <div className="relative w-[80%] sm:w-[60%] md:w-full max-w-[500px] h-[300px] sm:h-[400px] md:h-[500px]">
+          <div className="relative w-[80%] sm:w-[60%] md:w-full max-w-125 h-75 sm:h-100 md:h-125">
             <Image 
               src={bannerImg} 
               alt="Workout illustration" 

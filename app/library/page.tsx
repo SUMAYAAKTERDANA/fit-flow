@@ -1,11 +1,12 @@
-import React from 'react';
+import React from "react";
+import Library from "../component/homepage/Library";
 
-const page = () => {
-    return (
-        <div>
-            library page is render
-        </div>
-    );
+const LibraryPage = () => {
+  return (
+    <main>
+      <Library />
+    </main>
+  );
 };
 
-export default page;
+export default LibraryPage;
