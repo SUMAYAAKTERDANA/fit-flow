@@ -53,7 +53,7 @@ const MyPlanPage = () => {
                 : "text-gray-400 hover:text-white"
             }`}
           >
-            Today's Plan ({plan.length})
+          {"Today's Plan "}({plan.length})
           </button>
           <button
             onClick={() => setActiveTab("saved")}

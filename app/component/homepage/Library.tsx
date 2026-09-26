@@ -30,23 +30,12 @@ const [loading, setLoading] = useState(true);
     return 0;
   });
 
-  // Sort logic
-  // useEffect(() => {
-  //   if (!workouts.length) return;
-
-  //   const sorted = [...workouts].sort((a, b) => {
-  //     if (sortBy === "duration") return a.duration - b.duration;
-  //     if (sortBy === "calories") return b.caloriesBurned - a.caloriesBurned;
-  //     if (sortBy === "rating") return b.rating - a.rating;
-  //     return 0;
-  //   });
-    
-  // }, [workouts, sortBy]);
+  
 
   return (
     <section className="container mx-auto px-5 py-16 bg-black text-white">
       
-      {/* Heading + Sort Dropdown */}
+       {/* Heading + Sort Dropdown  */}
       <div className="mb-10 flex items-start justify-between gap-4 flex-wrap">
         <div>
           <h2 className="text-3xl md:text-4xl font-bold">THE LIBRARY</h2>
